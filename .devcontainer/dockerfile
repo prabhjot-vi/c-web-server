@@ -1,0 +1,5 @@
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
+
+RUN apt-get -y update \
+    && apt-get -y install build-essential gdb \
+    && rm -rf /var/lib/apt/lists/*
